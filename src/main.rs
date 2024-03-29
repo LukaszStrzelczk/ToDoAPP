@@ -1,6 +1,7 @@
 slint::include_modules!();
 
 fn main() -> Result<(), slint::PlatformError> {
+    println!("Hello World");
     let ui = AppWindow::new()?;
 
     ui.on_request_increase_value({
